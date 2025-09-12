@@ -1,0 +1,96 @@
+body {
+    width: 280px; /* Largura fixa para a popup */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+/* Container principal */
+.container {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Título */
+h1 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1c1e21;
+}
+
+/* Div que agrupa o slider e os ícones */
+.volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 1.2em;
+}
+
+/* Estilo do controle deslizante (slider) */
+input[type="range"] {
+    -webkit-appearance: none; /* Remove o estilo padrão */
+    appearance: none;
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Estilo da "bolinha" do slider */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Mostrador de volume */
+.volume-display {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Botão de silenciar */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98); }

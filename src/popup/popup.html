@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Volume Control</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Volume</h1>
+        <div class="volume-control">
+            <span class="icon">🔈</span>
+            <input type="range" id="volumeSlider" min="0" max="100" value="50">
+            <span class="icon">🔊</span>
+        </div>
+        <p class="volume-display">Volume: <span id="volumeValue">50</span>%</p>
+        <button id="muteButton">Silenciar</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
